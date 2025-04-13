@@ -10,8 +10,8 @@ function register ({ registerHook, peertubeHelpers }) {
         panel.innerHTML = html;
       }
       setInterval(async function(){
-        if (document.querySelector('.top-menu .custom-links') === null && c['custom_links_markdown']) {
-          const topMenu = document.querySelector('.top-menu');
+        if (document.querySelector('.main-menu .custom-links') === null && c['custom_links_markdown']) {
+          const topMenu = document.querySelector('.main-menu');
           if (topMenu) {
             topMenu.appendChild(panel);
           }
